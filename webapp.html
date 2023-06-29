@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Web App</title>
+  <script src="webapp.js"></script>
+  <link href="webapp.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div class="min-h-screen grid text-gray-900 p-3 place-content-center">
+
+    <div class="flex flex-col sm:flex-row justify-between gap-5">
+      <div class="w-[300px] sm:w-[200px] lg:w-[250px]">
+        <form>
+          The Country: <input #country1 class="bg-slate-200 outline-none rounded-sm" type="text" />
+        </form>
+      </div>
+      <div class="w-[300px] sm:w-[200px] lg:w-[250px]">
+        The Average: {{countryAverage}}
+      </div>
+      <div class="w-[300px] sm:w-[200px] lg:w-[250px]">
+  
+        <div *ngIf="countryAveregePercent()" class="bg-red-400 h-full" [ngStyle]="{'width': countryAveregePercent()}">
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+</body>
+</html>

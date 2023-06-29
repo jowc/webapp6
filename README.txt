@@ -1,0 +1,1 @@
+I used tailwind css, a single component file and helper functions from other files.
